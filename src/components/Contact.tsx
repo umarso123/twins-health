@@ -119,15 +119,17 @@ export function Contact() {
               Let's talk about your care programmes.
             </h2>
           </div>
-          <img
-            src={media.overhead}
-            alt="A man uses a phone while seated on a navy sofa, photographed from above."
-            className="mt-auto h-56 w-full object-cover object-center sm:h-72 lg:h-80"
-            width={1400}
-            height={1600}
-            loading="lazy"
-            decoding="async"
-          />
+          <div className="relative mt-auto min-h-72 flex-1">
+            <img
+              src={media.overhead}
+              alt="A man uses a phone while seated on a navy sofa, photographed from above."
+              className="absolute inset-0 h-full w-full object-cover object-[center_42%]"
+              width={1400}
+              height={1600}
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
 
         <div className="bg-surface px-5 py-14 sm:px-8 sm:py-16 lg:px-16 lg:py-20 xl:pr-24">
@@ -157,7 +159,7 @@ export function Contact() {
                   const inputId = `contact-${field.name}`
                   const errorId = `${inputId}-error`
                   const describedBy = error ? errorId : undefined
-                  const fieldClass = `w-full border-0 border-b bg-transparent px-0 py-3 text-base text-ink ${
+                  const fieldClass = `w-full border-0 border-b-2 bg-transparent px-0 py-3 text-base text-ink ${
                     error ? 'border-danger' : 'border-line'
                   }`
 

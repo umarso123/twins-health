@@ -74,23 +74,18 @@ export function SanedHealth() {
           </Reveal>
         </div>
 
-        <ol className="mt-16 border-t border-line sm:mt-20 lg:mt-24">
+        <ol className="mt-16 border-t border-line sm:mt-20 lg:mt-28">
           {capabilities.map((capability, index) => (
-            <li
-              key={capability.title}
-              className={`border-b border-line py-8 sm:py-10 ${
-                index % 2 === 1 ? 'lg:ml-[18%] lg:w-[82%]' : 'lg:w-[86%]'
-              }`}
-            >
+            <li key={capability.title} className="border-b border-line">
               <Reveal>
-                <div className="grid gap-3 sm:grid-cols-12 sm:items-baseline sm:gap-6">
-                  <p className="text-sm font-medium tracking-[0.14em] text-brand-teal-deep sm:col-span-2">
+                <div className="grid gap-3 border-l-2 border-transparent py-8 pl-5 transition-colors hover:border-brand-accent hover:bg-surface-muted sm:grid-cols-[4.25rem_minmax(0,0.95fr)_minmax(0,1.05fr)] sm:items-baseline sm:gap-8 sm:py-11 sm:pl-6 lg:py-12">
+                  <p className="text-sm font-medium tracking-[0.18em] text-brand-teal-deep">
                     {String(index + 1).padStart(2, '0')}
                   </p>
-                  <h3 className="text-xl font-semibold tracking-tight text-ink sm:col-span-5 sm:text-2xl">
+                  <h3 className="text-2xl font-semibold tracking-[-0.03em] text-ink">
                     {capability.title}
                   </h3>
-                  <p className="text-base leading-relaxed text-ink-soft sm:col-span-5">
+                  <p className="max-w-md text-base leading-relaxed text-ink-soft">
                     {capability.description}
                   </p>
                 </div>
