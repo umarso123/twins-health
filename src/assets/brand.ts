@@ -1,7 +1,7 @@
 /**
  * Logo hook.
- * The identity system uses a lowercase "twinshealth" wordmark in Poppins.
- * Set `src` if a logo file is supplied later; otherwise the wordmark is rendered.
+ * The identity uses the rounded-square mark with a lowercase Poppins wordmark.
+ * Set `src` to replace the drawn mark with a supplied logo file.
  */
 export const logoAsset: {
   src: string | null
