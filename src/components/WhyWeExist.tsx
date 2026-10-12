@@ -6,16 +6,16 @@ export function WhyWeExist() {
     <section id="why" aria-labelledby="why-heading" className="on-dark">
       <Container className="py-24 md:py-32 lg:py-40">
         <Reveal>
-          <div className="grid items-end gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
             <h2
               id="why-heading"
               tabIndex={-1}
-              className="text-[clamp(2.6rem,5.4vw,5.35rem)] font-semibold leading-[0.96] tracking-[-0.045em] text-ink-inverse lg:col-span-8"
+              className="text-[clamp(2rem,3.1vw,3rem)] font-semibold leading-tight tracking-[-0.03em] text-ink-inverse lg:col-span-7"
             >
               <span className="block">Healthcare has the data.</span>
-              <span className="mt-3 block text-brand-accent">The gap is acting on it.</span>
+              <span className="mt-2 block text-brand-accent">The gap is acting on it.</span>
             </h2>
-            <p className="max-w-md text-base leading-relaxed text-ink-inverse-soft sm:text-lg lg:col-span-4 lg:pb-2">
+            <p className="max-w-md text-base leading-relaxed text-ink-inverse-soft sm:text-lg lg:col-span-5 lg:pb-1">
               Most health systems already record and report a great deal. What's often missing is
               the next step: turning insight into coordinated action for the right patient at the
               right time. That's the gap we were built to close.
