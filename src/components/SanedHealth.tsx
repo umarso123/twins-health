@@ -51,22 +51,22 @@ export function SanedHealth() {
           </Reveal>
 
           <Reveal delay={100} className="relative lg:col-span-7">
-            <div className="grid grid-cols-12 items-end gap-3 sm:gap-5">
+            <div className="grid grid-cols-12 items-stretch gap-3 sm:gap-5">
               <img
-                src={media.watch}
-                alt="A smartwatch showing the TwinHealth mark."
-                className="col-span-5 w-full object-cover"
-                width={800}
-                height={900}
+                src={media.scrubs}
+                alt="Navy clinical scrubs and a stethoscope, with the twinshealth wordmark on the sleeve."
+                className="col-span-5 h-64 w-full object-cover object-center sm:h-80 lg:h-[28rem]"
+                width={971}
+                height={1536}
                 loading="lazy"
                 decoding="async"
               />
               <img
-                src={media.phone}
-                alt="A phone showing the TwinHealth mark."
-                className="col-span-7 w-full object-cover"
-                width={900}
-                height={1100}
+                src={media.elder}
+                alt="An older man uses a tablet beside a window overlooking the Riyadh skyline."
+                className="col-span-7 h-64 w-full object-cover object-[center_30%] sm:h-80 lg:h-[28rem]"
+                width={1672}
+                height={941}
                 loading="lazy"
                 decoding="async"
               />

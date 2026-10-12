@@ -17,15 +17,6 @@ export function WhoWeAre() {
               decoding="async"
             />
           </div>
-          <img
-            src={media.elder}
-            alt="An older man uses a tablet beside a window overlooking the Riyadh skyline."
-            className="photo-inset absolute right-[7%] bottom-10 hidden aspect-[4/5] w-[46%] object-cover lg:block"
-            width={900}
-            height={1100}
-            loading="lazy"
-            decoding="async"
-          />
         </Reveal>
 
         <div className="flex items-center px-5 py-20 sm:px-6 md:py-28 lg:py-32 lg:pr-[max(2rem,calc((100vw-80rem)/2+2rem))] lg:pl-16 xl:pl-24">

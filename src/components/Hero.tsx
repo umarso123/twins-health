@@ -56,14 +56,6 @@ export function Hero() {
               decoding="async"
             />
           </div>
-          <img
-            src={media.watch}
-            alt=""
-            className="absolute bottom-5 left-4 w-32 border-4 border-surface object-cover sm:bottom-8 sm:w-40 lg:bottom-12 lg:left-0 lg:w-52 lg:-translate-x-[22%]"
-            width={640}
-            height={640}
-            decoding="async"
-          />
         </Reveal>
       </div>
     </section>
