@@ -40,10 +40,7 @@ export function Footer() {
     <footer className="bg-brand-primary-deep">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-5 py-12 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8 lg:py-16">
         <p className="text-ink-inverse">
-          <Logo tone="inverse" className="text-2xl" />
-          <span className="mt-3 block text-sm tracking-[0.08em] text-ink-inverse-soft">
-            by Obeikan
-          </span>
+          <Logo tone="inverse" />
         </p>
         <nav aria-label="Footer">
           <ul className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-10">

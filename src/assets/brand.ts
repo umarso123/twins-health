@@ -1,14 +1,13 @@
+import logoInverse from './logos/logo-inverse.png'
+import logoNavy from './logos/logo-navy.png'
+
 /**
- * Logo hook.
- * The identity uses the rounded-square mark with a lowercase Poppins wordmark.
- * Set `src` to replace the drawn mark with a supplied logo file.
+ * Official twins health lockups.
+ * Navy is for light backgrounds. Inverse is for dark backgrounds.
  */
-export const logoAsset: {
-  src: string | null
-  alt: string
-  wordmark: string
-} = {
-  src: null,
-  alt: 'twinshealth',
-  wordmark: 'twinshealth',
+export const logoAsset = {
+  src: logoNavy,
+  inverseSrc: logoInverse,
+  alt: 'twins health by Obeikan',
+  wordmark: 'twins health',
 }
