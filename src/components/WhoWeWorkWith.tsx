@@ -49,20 +49,19 @@ export function WhoWeWorkWith() {
   return (
     <section id="audiences" aria-labelledby="audiences-heading" className="bg-surface-muted">
       <Container className="py-16 md:py-24 lg:py-28">
-        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-          <Reveal className="lg:col-span-5">
+        <div className="grid gap-y-8 lg:grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-x-16 lg:gap-y-10">
+          <Reveal className="relative mb-4 lg:col-span-5 lg:row-start-2 lg:mb-0 lg:h-full">
             <img
               src={media.skyline}
               alt="A man reviews a tablet with the Riyadh skyline behind him."
-              className="h-auto w-full"
+              className="h-auto w-full lg:absolute lg:inset-0 lg:h-full lg:object-cover lg:object-[center_42%]"
               width={1672}
               height={941}
               loading="lazy"
               decoding="async"
             />
           </Reveal>
-          <div className="lg:col-span-7">
-          <Reveal>
+          <Reveal className="lg:col-span-7 lg:col-start-6 lg:row-start-1">
             <h2
               id="audiences-heading"
               tabIndex={-1}
@@ -71,8 +70,8 @@ export function WhoWeWorkWith() {
               Who We Work With
             </h2>
           </Reveal>
-          <Reveal delay={80}>
-            <ul className="mt-8 lg:mt-10">
+          <Reveal delay={80} className="lg:col-span-7 lg:col-start-6 lg:row-start-2">
+            <ul>
               {audiences.map((audience) => (
                 <li
                   key={audience.label}
@@ -88,7 +87,6 @@ export function WhoWeWorkWith() {
             {/* Client logo insertion area: add approved logos from src/assets/logos/ here. */}
             <div data-client-logos />
           </Reveal>
-          </div>
         </div>
       </Container>
     </section>
