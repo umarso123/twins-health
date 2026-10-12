@@ -12,30 +12,31 @@ const audiences = [
 export function WhoWeWorkWith() {
   return (
     <section id="audiences" aria-labelledby="audiences-heading" className="bg-surface-muted">
-      <div className="relative h-52 overflow-hidden sm:h-72 lg:h-80">
-        <img
-          src={media.skyline}
-          alt="A man reviews a tablet with the Riyadh skyline behind him."
-          className="h-full w-full object-cover object-[center_35%]"
-          width={1600}
-          height={900}
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
       <Container className="py-16 md:py-24 lg:py-28">
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
-          <Reveal className="lg:col-span-4">
+        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <Reveal className="lg:col-span-5">
+            <img
+              src={media.skyline}
+              alt="A man reviews a tablet with the Riyadh skyline behind him."
+              className="h-auto w-full"
+              width={1672}
+              height={941}
+              loading="lazy"
+              decoding="async"
+            />
+          </Reveal>
+          <div className="lg:col-span-7">
+          <Reveal>
             <h2
               id="audiences-heading"
               tabIndex={-1}
-              className="max-w-[8ch] text-4xl font-semibold tracking-[-0.03em] text-ink sm:text-5xl"
+              className="max-w-[10ch] text-4xl font-semibold tracking-[-0.03em] text-ink sm:text-5xl"
             >
               Who We Work With
             </h2>
           </Reveal>
-          <Reveal className="lg:col-span-8" delay={80}>
-            <ol>
+          <Reveal delay={80}>
+            <ol className="mt-8 lg:mt-10">
               {audiences.map((audience, index) => (
                 <li
                   key={audience}
@@ -53,6 +54,7 @@ export function WhoWeWorkWith() {
             {/* Client logo insertion area: add approved logos from src/assets/logos/ here. */}
             <div data-client-logos />
           </Reveal>
+          </div>
         </div>
       </Container>
     </section>
